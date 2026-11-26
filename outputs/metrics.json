@@ -1,0 +1,131 @@
+{
+  "best_embedding_model": {
+    "model_id": "minilm_l12",
+    "model_name": "sentence-transformers/all-MiniLM-L12-v2",
+    "batch_size": 64
+  },
+  "best_hyperparameters": {
+    "trial_id": "ce_2.0",
+    "lambda_class": 0.5,
+    "ce_weight": 2.0,
+    "margin": 1.0,
+    "reg": 0.0001,
+    "class_weight": "none"
+  },
+  "validation": {
+    "n_utterances": 177,
+    "n_classified_nodes": 619,
+    "intent_accuracy_on_gold_tree_nodes": 0.6462035541195477,
+    "intent_macro_f1_on_gold_tree_nodes": 0.4903569645202662,
+    "intent_weighted_f1_on_gold_tree_nodes": 0.6204275489944034,
+    "classification_report": {
+      "Student-Exclusive": {
+        "precision": 0.6060606060606061,
+        "recall": 0.35714285714285715,
+        "f1-score": 0.449438202247191,
+        "support": 56.0
+      },
+      "Student-Led with Teacher Support": {
+        "precision": 0.38181818181818183,
+        "recall": 0.26582278481012656,
+        "f1-score": 0.31343283582089554,
+        "support": 79.0
+      },
+      "Teacher-Exclusive": {
+        "precision": 0.4166666666666667,
+        "recall": 0.2542372881355932,
+        "f1-score": 0.3157894736842105,
+        "support": 59.0
+      },
+      "Non-Mathematical-Thinking-Related": {
+        "precision": 0.775,
+        "recall": 0.5,
+        "f1-score": 0.6078431372549019,
+        "support": 62.0
+      },
+      "unlabeled": {
+        "precision": 0.6879120879120879,
+        "recall": 0.8622589531680441,
+        "f1-score": 0.7652811735941321,
+        "support": 363.0
+      },
+      "accuracy": 0.6462035541195477,
+      "macro avg": {
+        "precision": 0.5734915084915085,
+        "recall": 0.4478923766513242,
+        "f1-score": 0.4903569645202662,
+        "support": 619.0
+      },
+      "weighted avg": {
+        "precision": 0.6243109071865129,
+        "recall": 0.6462035541195477,
+        "f1-score": 0.6204275489944034,
+        "support": 619.0
+      }
+    },
+    "parse_precision": 0.751131221719457,
+    "parse_recall": 0.751131221719457,
+    "parse_f1": 0.751131221719457,
+    "parse_exact_match": 0.7297297297297297,
+    "n_multi_clause_utterances": 111,
+    "intent_accuracy_on_matched_predicted_spans": 0.5843373493975904
+  },
+  "test": {
+    "n_utterances": 357,
+    "n_classified_nodes": 1267,
+    "intent_accuracy_on_gold_tree_nodes": 0.6274664561957379,
+    "intent_macro_f1_on_gold_tree_nodes": 0.4608117998283971,
+    "intent_weighted_f1_on_gold_tree_nodes": 0.6027320358973002,
+    "classification_report": {
+      "Student-Exclusive": {
+        "precision": 0.5591397849462365,
+        "recall": 0.4,
+        "f1-score": 0.4663677130044843,
+        "support": 130.0
+      },
+      "Student-Led with Teacher Support": {
+        "precision": 0.3893805309734513,
+        "recall": 0.29931972789115646,
+        "f1-score": 0.3384615384615385,
+        "support": 147.0
+      },
+      "Teacher-Exclusive": {
+        "precision": 0.3333333333333333,
+        "recall": 0.1717171717171717,
+        "f1-score": 0.22666666666666666,
+        "support": 99.0
+      },
+      "Non-Mathematical-Thinking-Related": {
+        "precision": 0.6947368421052632,
+        "recall": 0.4230769230769231,
+        "f1-score": 0.5258964143426295,
+        "support": 156.0
+      },
+      "unlabeled": {
+        "precision": 0.673224043715847,
+        "recall": 0.8380952380952381,
+        "f1-score": 0.7466666666666667,
+        "support": 735.0
+      },
+      "accuracy": 0.6274664561957379,
+      "macro avg": {
+        "precision": 0.5299629070148262,
+        "recall": 0.4264418121560979,
+        "f1-score": 0.4608117998283971,
+        "support": 1267.0
+      },
+      "weighted avg": {
+        "precision": 0.6046769767921678,
+        "recall": 0.6274664561957379,
+        "f1-score": 0.6027320358973002,
+        "support": 1267.0
+      }
+    },
+    "parse_precision": 0.7230769230769231,
+    "parse_recall": 0.7230769230769231,
+    "parse_f1": 0.723076923076923,
+    "parse_exact_match": 0.6517857142857143,
+    "n_multi_clause_utterances": 224,
+    "intent_accuracy_on_matched_predicted_spans": 0.5623100303951368
+  }
+}
